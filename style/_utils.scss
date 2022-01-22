@@ -2,7 +2,8 @@
 
 // Importing Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Poppins:wght@600&family=Roboto&family=Ubuntu:wght@500&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 // Variables
 
 // Fonts 
@@ -10,6 +11,9 @@ $font1: "Baloo Bhaina 2", cursive;
 $font2: "Roboto", sans-serif;
 $font3: "Ubuntu", sans-serif;
 $article_header_font:'Poppins', sans-serif;
+$header_font:'Poppins', sans-serif;
+// $header_font:'Source Sans Pro', sans-serif;
+
 
 // Color 
 $font_color: black;
@@ -34,10 +38,10 @@ $instagram_color: #c13584;
 
 // Downloaded  Fonts
 
-@font-face {
-    font-family: header_font;
-    src: url(../fonts/Aero.ttf);
-}
+// @font-face {
+//     font-family: header_font;
+//     src: url(../fonts/Aero.ttf);
+// }
 
 // Utility Classes
 
@@ -82,10 +86,14 @@ $instagram_color: #c13584;
     font-family: $font2;
     border: 0.1rem solid rgb(199, 199, 199);
     border-radius: 1.3rem;
+    width: 65%;
+    transition: all .3s ease-in-out;
     &:focus {
         border: 0.1rem solid $font_color;
+        width: 100%;
     }
 }
+
 
 .btn {
     padding: 8px 20px;
